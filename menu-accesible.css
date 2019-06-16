@@ -1,222 +1,110 @@
 body {
   font-family: Arial;
-  background-color: #ccc;
+  font-size: 1.75em;
+  background-color: #ddd;
+  color:#222;
+  line-height: 1.5em;
+  margin:0;
+  padding: 0;
+  border-right: 0;
 }
 
-.contraido, .oculto {
+.contraido {
   display: none;
 }
+
 .imagen-responsive {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-#nav-menu {
-  background-color: #336699;  
+.menu-accesible {
+  background-color: #336699;
+  color: #ffffff;
   width: 100%;
   float: left;
-  padding:2%;
+  padding:0;
+  margin:0;
+  border: 0;
 }
 
-#a-menu {
-  color: white;
+.menu-accesible .enlace-marca {
   float: left;
-  width: 84%;
+  max-width: 80%;
+  width:auto;
   text-decoration: none;
-  font-size: 1.75em;
-  line-height: 20px;
   padding: 0;
   margin: 0;
+
 }
 
-button#button-menu {	
-	background-color: #336699;
-	color: white;
-	
-	padding: 0.25em 0.1em; 
-	margin: 0;
-  	cursor: pointer;
-
-  	border: 1px solid white;
-    text-align: center;
-    text-decoration: none;    
-    box-shadow: none;
-    display:block;
-    line-height: 20px;
-}
-
-
-
-#ul-menu {
-	/*background-color: #336699;
-	color:white;*/
- 
-  	list-style: none;
-  	padding: 0;
-  	margin: 0;
-  	border-top: 1px solid white;    
-}
-
-ul.myhidden {
-  display: none;
-}
-
-#ul-menu li {
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;  
-}
-
-#ul-menu li a {
-	  padding: 0.75em 1em;  
-  	text-decoration: none;
-  	color:white;
-  	display: block;
-  	line-height: 20px;
-}
-
-nav.menu-right button#button-menu {
-  float:right;
-  width: 14%; 
-}
-
-nav.menu-right ul#ul-menu {
+.menu-accesible .accion-desplegable {
+  display:block;
   float: right;
-  width: 100%;
-}
+  max-width: 20%;
+  width:auto;
 
-@media only screen and (min-width: 766px) {
-  #nav-menu {
-    padding:0.2em 2.5em;
-  }
-  #a-menu {
-    border: none;
-    width: 30%;
-  }  
-  #ul-menu li {
-    float:right;
-    width: auto;
-    display: block;
-  }
-  button#button-menu {  
-    display: none;
-  }
-  nav.menu-right ul#ul-menu {
-    float: right;
-    width: 30%;
-    display: block;
-  }
-
-}
-
-
-
-
-
-
-
-/* Menu accesible */
-#nav-menu {
-  background-color: #336699;  
-  width: 100%;
-  float: left;
-  padding:2%;
-}
-
-#a-menu {
-  color: white;
-  float: left;
-  width: 84%;
-  text-decoration: none;
-  font-size: 1.75em;
-  line-height: 20px;
-  padding: 0;
-  margin: 0;
-}
-
-button#button-menu {  
   background-color: #336699;
   color: white;
-  
   padding: 0.25em 0.1em; 
   margin: 0;
-    cursor: pointer;
-
-    border: 1px solid white;
-    text-align: center;
-    text-decoration: none;    
-    box-shadow: none;
-    display:block;
-    line-height: 20px;
+  cursor: pointer;
+  border: 1px solid white;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: none;
 }
 
-
-#ul-menu {
-    list-style: none;
+.menu-accesible .elemento-desplegable {
+  float: left;
+  list-style: none;
     padding: 1em 0;
     margin: 0;
 }
 
-ul.myhidden {
-  display: none;
-}
-
-#ul-menu li a {
+.menu-accesible .elemento-desplegable li a {
   padding: 0.75em 1em;  
-    text-decoration: none;
-    color:white;
-    display: block;
-    line-height: 20px;
-    font-weight: bold;    
+  text-decoration: none;
+  color:white;
+  display: block;
+  font-weight: bold;
 }
 
-nav.menu-right button#button-menu {
-  float:right;
-  width: 14%; 
-}
-
-nav.menu-right ul#ul-menu {
-  float: right;
-  width: 100%;
-}
 
 @media only screen and (min-width: 766px) {
-  #nav-menu {
+  .menu-accesible {
     padding:0.25em 0;
-
   }
-  #a-menu {
+  .menu-accesible .enlace-marca {
     padding:0.4em 0.5em;
     padding-right: 0;
-    width: 30%;
-  }  
-  #ul-menu {
+    max-width: 30%;
+    width: auto;
+  }
+  .menu-accesible .elemento-desplegable {
+    float: right;
+    max-width: 70%;
+    width: auto;
+    display:block;
     padding:0;
   }
-  #ul-menu li {
-    float:right;
+  .menu-accesible .elemento-desplegable li {
+    float: right;
     width: auto;
     display: block;
   }
-  button#button-menu {  
+  .menu-accesible .accion-desplegable {
     display: none;
   }
-  nav.menu-right ul#ul-menu {
-    float: right;
-    width: 70%;
-    display: block;
-  }
-
 }
 @media only screen and (min-width: 900px) {
-  #nav-menu {
+  .menu-accesible {
     padding:0.5em 1em;
   }
-  #a-menu {
+  .menu-accesible .enlace-marca {
     padding:0;
     padding-left: 0.5em;
     margin-top: 0.15em;
-    
  }
 }
