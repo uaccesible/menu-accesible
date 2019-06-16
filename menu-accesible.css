@@ -1,12 +1,14 @@
-body {
+* {
   font-family: Arial;
-  font-size: 1.75em;
+  font-size: 1.167em; /* 14pt */
+  line-height: 1.5em;
+}
+
+body {
   background-color: #ddd;
   color:#222;
-  line-height: 1.5em;
   margin:0;
   padding: 0;
-  border-right: 0;
 }
 
 .contraido {
@@ -27,6 +29,7 @@ body {
   padding:0;
   margin:0;
   border: 0;
+  height: auto;
 }
 
 .menu-accesible .enlace-marca {
@@ -36,75 +39,83 @@ body {
   text-decoration: none;
   padding: 0;
   margin: 0;
-
 }
 
-.menu-accesible .accion-desplegable {
-  display:block;
+.menu-accesible button.accion-desplegable {
+  display: block;
   float: right;
   max-width: 20%;
   width:auto;
-
   background-color: #336699;
   color: white;
-  padding: 0.25em 0.1em; 
-  margin: 0;
+  padding: 0.3em;
+  margin: 0.5em;
   cursor: pointer;
   border: 1px solid white;
   text-align: center;
-  text-decoration: none;
   box-shadow: none;
 }
 
 .menu-accesible .elemento-desplegable {
   float: left;
+  clear:both;
   list-style: none;
-    padding: 1em 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-accesible .elemento-desplegable li {
+  float: left;
+  width: 100%;
 }
 
 .menu-accesible .elemento-desplegable li a {
-  padding: 0.75em 1em;  
+  padding: 0.5em 1em;
   text-decoration: none;
   color:white;
   display: block;
-  font-weight: bold;
 }
 
-
 @media only screen and (min-width: 766px) {
-  .menu-accesible {
-    padding:0.25em 0;
-  }
   .menu-accesible .enlace-marca {
-    padding:0.4em 0.5em;
-    padding-right: 0;
     max-width: 30%;
     width: auto;
   }
-  .menu-accesible .elemento-desplegable {
+  .menu-accesible > .elemento-desplegable {
+    clear: none;
     float: right;
     max-width: 70%;
     width: auto;
     display:block;
     padding:0;
   }
-  .menu-accesible .elemento-desplegable li {
-    float: right;
+  .menu-accesible > .elemento-desplegable li {
+    float: left;
     width: auto;
     display: block;
   }
-  .menu-accesible .accion-desplegable {
+  .menu-accesible > .elemento-desplegable li a {
+    padding: 0.5em;
+  }
+  .menu-accesible button.accion-desplegable {
     display: none;
   }
+  .menu-accesible .elemento-desplegable .elemento-desplegable {
+    clear: both;
+    float: left;
+    max-width: 30%;
+    width: auto;
+    padding:0;
+  }
+
 }
 @media only screen and (min-width: 900px) {
-  .menu-accesible {
+  /*.menu-accesible {
     padding:0.5em 1em;
-  }
-  .menu-accesible .enlace-marca {
+  }*/
+  /*.menu-accesible .enlace-marca {
     padding:0;
     padding-left: 0.5em;
     margin-top: 0.15em;
- }
+ }*/
 }
