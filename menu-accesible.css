@@ -3,7 +3,7 @@ body {
   background-color: #ccc;
 }
 
-.contraido {
+.contraido, .oculto {
   display: none;
 }
 .imagen-responsive {
