@@ -1,3 +1,31 @@
+/* RESET CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* MENU ACCESIBLE */
 * {
   font-family: Arial;
   font-size: 1.167em; /* 14pt */
@@ -7,8 +35,6 @@
 body {
   background-color: #ddd;
   color:#222;
-  margin:0;
-  padding: 0;
 }
 
 .contraido {
@@ -26,9 +52,6 @@ body {
   color: #ffffff;
   width: 100%;
   float: left;
-  padding:0;
-  margin:0;
-  border: 0;
   height: auto;
 }
 
@@ -37,8 +60,6 @@ body {
   max-width: 80%;
   width:auto;
   text-decoration: none;
-  padding: 0;
-  margin: 0;
 }
 
 .menu-accesible button.accion-desplegable {
@@ -53,15 +74,13 @@ body {
   cursor: pointer;
   border: 1px solid white;
   text-align: center;
-  box-shadow: none;
+  font-size: 1.333em; /* 14pt */
 }
 
 .menu-accesible .elemento-desplegable {
   float: left;
   clear:both;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .menu-accesible .elemento-desplegable li {
@@ -74,6 +93,7 @@ body {
   text-decoration: none;
   color:white;
   display: block;
+  font-size: 1.333em; /* 14pt */
 }
 
 @media only screen and (min-width: 766px) {
@@ -95,7 +115,9 @@ body {
     display: block;
   }
   .menu-accesible > .elemento-desplegable li a {
-    padding: 0.5em;
+    /*padding: 0.5em;
+    display: inline-block;
+    vertical-align: middle;*/
   }
   .menu-accesible button.accion-desplegable {
     display: none;
