@@ -4,23 +4,24 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<title>Menu accesible</title>
 	<link href="menu-accesible.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
-	<nav class="menu-accesible">
+	<header>
+		<nav class="menu-accesible">
 
-		<a class="enlace-marca" href="https://web.ua.es/accesibilidad/">
-			<img src="https://web.ua.es/es/cae/imagenes/programa-accesibilidad-digital-ua.png" alt="Accesibilidad Digital UA" class="imagen-responsive" />
-		</a>
+			<a class="enlace-marca" href="https://web.ua.es/accesibilidad/">
+				<img src="https://web.ua.es/es/cae/imagenes/programa-accesibilidad-digital-ua.png" alt="Accesibilidad Digital UA" class="imagen-responsive" width="275px" />
+			</a>
 
-		<button class="accion-desplegable contraido" data-desplegable="#menu-principal">
-			Menú
-		</button>
+			<button class="accion-desplegable contraido" data-desplegable="#menu-principal">
+				Menú
+			</button>
 
-		<ul id="menu-principal" class="elemento-desplegable contraido">
+			<ul id="menu-principal" class="elemento-desplegable contraido">
 				<li class="menu-item">
 					<a href="http://www.josemariafernandez.es/sobre-mi/">Sobre mí</a>
 				</li>
@@ -30,29 +31,32 @@
 				<li class="menu-item">
 					<a href="http://www.josemariafernandez.es/contacto/">Contacto</a>
 				</li>
-			<li class="menu-item">
-				<a href="#" class="accion-desplegable contraido" data-desplegable="#menu-mas" >Más</a>
-				<ul id="menu-mas" class="elemento-desplegable contraido">
-					<li class="menu-item">
-						<a href="http://www.josemariafernandez.es/sobre-mi/">Uno</a>
-					</li>
-					<li class="menu-item">
-						<a href="http://www.josemariafernandez.es/tecnologia-accesible/">Dos</a>
-					</li>
-				</ul>
-			</li>
-		</ul>
+				<li class="menu-item">
+					<a href="#" class="accion-desplegable contraido" data-desplegable="#menu-mas" >Más</a>
+					<ul id="menu-mas" class="elemento-desplegable contraido">
+						<li class="menu-item">
+							<a href="http://www.josemariafernandez.es/sobre-mi/">Uno</a>
+						</li>
+						<li class="menu-item">
+							<a href="http://www.josemariafernandez.es/tecnologia-accesible/">Segunda opción</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
 
 
-	</nav>
+		</nav>
+	</header>
 
 	<section>
-		<p>Hola buenos días y bienvenido</p>
+		<article>
+			<h1>Ejemplo de funcionamiento de Menú accesible</h1>
+			<p>En esta página se puede probar el funcionamiento del Menú Accesible realizado con HTML, CSS y JavaScriot.</p>
+		</article>
 	</section>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="menu-accesible.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+	<script src="menu-accesible.js"></script>
 
 </body>
 </html>

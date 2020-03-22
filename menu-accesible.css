@@ -27,9 +27,15 @@ footer, header, hgroup, main, menu, nav, section {
 
 /* MENU ACCESIBLE */
 * {
-  font-family: Arial;
+  font-family: Arial, Verdanan Helvetica;
   font-size: 1.167em; /* 14pt */
   line-height: 1.5em;
+}
+
+h1 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding-bottom: 1em;
 }
 
 body {
@@ -122,12 +128,24 @@ body {
   .menu-accesible button.accion-desplegable {
     display: none;
   }
-  .menu-accesible .elemento-desplegable .elemento-desplegable {
+  /*.menu-accesible .elemento-desplegable .elemento-desplegable {
     clear: both;
     float: left;
     max-width: 30%;
     width: auto;
     padding:0;
+  }*/
+
+  .menu-accesible .elemento-desplegable .expandido {
+    position: absolute;
+    top:auto;
+    left: 800px;
+    background-color: #336699;
+    color: #ffffff;
+    width: 100%;
+  }
+  .menu-accesible .elemento-desplegable .expandido li {
+    width: 100%;
   }
 
 }
